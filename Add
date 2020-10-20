@@ -1,0 +1,41 @@
+import * as React from 'react';
+import Bruh, { useState } from 'react';
+import { Text, View, StyleSheet, Image } from 'react-native';
+import { TextInput} from 'react-native';
+export default function Add() {
+  const [text, setText] = useState('');
+  return (
+    <View style={styles.container}>
+      <Text style={styles.paragraph}>
+        Title:{"  "} 
+      </Text>
+      <Text>
+        Coordinates:{"  "}
+      </Text>
+      <TextInput
+        placeholder="Type here"
+        onChangeText={text => setText(text)}
+        defaultValue={text}
+      />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    alignItems: 'left',
+    justifyContent: 'left',
+    padding: 10,
+  },
+  paragraph: {
+    margin: 0,
+    marginTop: 0,
+    fontSize: 14,
+    fontWeight: 'bold',
+    textAlign: 'left',
+  },
+  logo: {
+    height: 128,
+    width: 128,
+  }
+});
