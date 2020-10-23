@@ -59,9 +59,15 @@ function homeScreen({ navigation }) {
   function add({ navigation }) {  
         return (  
             <View style={styles.container}>  
-              <Text style={styles.paragraph}>
-                Enter Name Of Place  
-              </Text> 
+              <Card>
+                <Title />
+                <Long />
+                <Lat />
+              </Card>
+              <Button
+                title="Submit"
+                onPress={() =>  navigation.navigate("Home")} 
+                />
             </View>  
     );  
   }  
