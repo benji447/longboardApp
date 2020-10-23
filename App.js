@@ -11,6 +11,9 @@ import { Dimensions } from 'react-native';
 import Password from './components/Password';
 import Username from './components/Username';
 import Search from './components/Search';
+import Title from './components/Title';
+import Long from './components/Longitude';
+import Lat from './components/Latitude';
 // or any pure javascript modules available in npm
 import { Card } from 'react-native-paper';
 const Separator = () => (
